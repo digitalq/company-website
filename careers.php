@@ -101,6 +101,14 @@ include 'include/header.php';
             <!-- End of .quote-form-wrapper -->
         </div>
     </section>
+	<?php
+
+     foreach ($_POST as $key => $value)
+    $message .= "Field ".htmlspecialchars($key)." is ".htmlspecialchars($value)."<br>";
+
+    //mail('support@digitalqits.com', 'Career - Apply', $message);
+
+     ?>
 
   
     <!-- Quote modal starts
@@ -120,7 +128,7 @@ include 'include/header.php';
                 <div class="modal-body d-flex align-items-center justify-content-center text-center">
                     <div class="quote-form-wrapper text-center">
                         <h3>We’d love to talk about working together.</h3>
-                        <form method="POST" class="quote-form text-center row" action="contact.php#">
+                        <form method="POST" class="quote-form text-center row" action="careers.php">
                             <div class="col-lg-6">
                                 <input type="text" name="fname" placeholder="Name">
                             </div>
@@ -136,7 +144,7 @@ include 'include/header.php';
                             </div>
                             <div class="col-lg-12">
                                 <textarea placeholder="Message" name="message"></textarea>
-                                <button type="submit" class="custom-btn secondary-btn w-100">Submit</button>
+				<button type="submit" class="custom-btn secondary-btn w-100">Submit</button>
                                 <div class="social-icons-wrapper d-flex justify-content-center">
                                     <p>Follow us:</p>
                                     <ul class="social-icons">

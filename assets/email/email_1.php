@@ -1,5 +1,5 @@
 <?php
-//require('phpmailer/class.phpmailer.php');
+require('phpmailer/class.phpmailer.php');
 
 
 $fname = trim($_POST['fname']);
@@ -55,13 +55,12 @@ if ($fname == "") {
     $message .= '<p>Subject: ' . $txtSubject . '</p>';
     $message .= '<p>Message: ' . $_message . '</p>';
     $message .= '</body></html>';
-    //$headers = 'MIME-Version: 3.0' . "\r\n";
+    $headers = 'MIME-Version: 3.0' . "\r\n";
     //$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
     //$headers .= 'From:  '.$fname.' <'.$email.'>' . "\r\n";
     //$headers .= 'cc: webadmin@dqserv.com' . "\r\n";
     //$headers .= 'bcc: webadmin@digitalq.in' . "\r\n";
-	
-	/*$mail = new PHPMailer();
+	$mail = new PHPMailer();
 	$mail->IsSMTP();
 	$mail->SMTPDebug = 0;
 	$mail->SMTPAuth = TRUE;
@@ -80,23 +79,14 @@ if ($fname == "") {
 	$mail->MsgHTML($message);
 
 
-	$mail->IsHTML(true);*/
-	
-	// make sure each line doesn't exceed 70 characters
-	$message = wordwrap($message, 70);
+	$mail->IsHTML(true);
 
-	// send email
-	mail('vivekra@dqserv.com', 'Contact Us details', $message);
-	
-	$msg['success'] = "\n Email has been sent successfully.";
-	$msg['code'] = TRUE;
-
-	/*if(!$mail->Send()) { 
+	if(!$mail->Send()) {
 		$msg['code'] = FALSE;
 	} else {
 		$msg['success'] = "\n Email has been sent successfully.";
 		$msg['code'] = TRUE;
-	}*/	
+	}	
 
 
 

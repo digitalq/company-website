@@ -37,9 +37,14 @@
                 <div class="row justify-content-between">
                     <div class="col-lg-5 ">
                         <div class="info">
-                            <h5>DigitalQ UK IT Solutions Ltd</h5>
-                            <p>Orega Slough,<br>The Switch 1-7,<br>The Grove, Slough - SL1 1PQ.</p>
-                        </div>
+			    <h5>DigitalQ UK IT Solutions Ltd</h5>
+			  <!--  <p>Orega Slough,<br>The Switch 1-7,<br>The Grove, Slough - SL1 1PQ.</p> -->
+                                 <p>Regus, Concorde Park,<br>Concorde Road, Building 3, Maidenhead, Berkshire,<br> SL6 4FJ.</p>
+			</div>
+			<div class="info">
+				<h5>Corporate  Office</h5>	
+				<p>Orega Slough,<br>The Switch 1-7,<br>The Grove, Slough - SL1 1PQ.</p>
+			</div>	
                         <!-- End of .info -->
                     </div>
                     <!-- End of .col-md-3 -->
@@ -54,7 +59,9 @@
                     <div class="col-lg-4 ">
                         <div class="info">
                             <h5>Phone</h5>
-							<a href="tel:+44175339920">+44 175-339-920</a>
+						<!--	<a href="tel:+44175339920">+44 175-339-920</a> -->
+							<a href="tel:+441628272444">+44 162-8272-444</a>
+							<a href="tel:+441628272100">+44 1628 272 100</a>
                            
                         </div>
                         <!-- End of .info -->
@@ -147,7 +154,7 @@
                     <div class="col-lg-3 ">
                         <div class="info">
                             <h5>Email</h5>
-                            <a href="mailto:welcome@digitalqglobal.ca">welcome@digitalqglobal.ca</a>
+                            <a href="mailto:cloudcas@dqserv.com">cloudcas@dqserv.com</a>
                         </div>
                         <!-- End of .info -->
                     </div>
